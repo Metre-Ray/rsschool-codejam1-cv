@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Curriculum Vitae | Diana Loiko </title>
+</head>
+<body>
+  <div class='maindiv'>
+    <div class='photo-name'>
+      <img src='myphoto2.jpg' alt='may be my photo' title="someone's photo" />
+      <div class='name'> Diana Loiko </div>
+      <div class='contacts'>
+        <h3> Contacts: </h3>
+        <p>
+           Location: Minsk, Belarus <br>
+           E-mail: dgary@tut.by <br>
+           Mobile: +375 33 600 66 97 <br>
+           Github: <a href='https://github.com/Metre-Ray'>https://github.com/Metre-Ray</a>
+        </p>
+      </div>
+    </div>
+    <div class="summary">
+      <h3> Summary: </h3>
+      <p> Want to start a career of Junior Developer and have great desire to work in this sphere. Ready to learn a lot to know everything I need. </p>
+    </div>
+    <div class='skills'>
+      <h3> Skills: </h3>
+      <ul>
+        <li> HTML/CSS </li>
+        <li> Javascript </li>
+        <li> Python </li>
+        <li> Git </li>
+      </ul>
+    </div>
+    <div class='code-example'>
+      <h3> Code example: </h3>
+      <pre>const createIncrementer = () => {
+          let obj = {
+            current: 0,
+            next() {
+                this.current++;
+                return {
+                  done: false,
+                  value: this.current
+                };
+            },
+            [Symbol.iterator]() {
+              return this;
+            }
+          };
+          return obj;
+        };
+      </pre>
+    </div>
+    <div class='experience'>
+      <h3> Work expirience: </h3>
+        <p>
+          August 2017 - present <br>
+          Institute of physiology of The National Academy of Sciences of Belarus <br>
+          Junior Researcher
+        </p>
+    </div>
+    <div class='education'>
+        <h3>Education:</h3>
+        <ul>
+          <li> University: Belarusian State University, Physics Faculty </li>
+          <li>
+            Online courses:
+            <ul>
+              <li> Codeacademy: Introduction to HTML, Learn CSS, Learn Java </li>
+              <li> Stepic.org: <span lang="ru">Программирование на</span> Python, <span lang="ru">Введение в базы данных</span></li>
+            </ul>
+          </li>
+        </ul>
+      <p> English-level: Intermediate </p>
+    </div>
+  </div>
+</body>
+</html>
