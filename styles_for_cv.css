@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   background-color: #eeeeff;
   padding: 10px;
+  border: 1px solid black;
 }
 
 h3 {
@@ -22,8 +23,9 @@ img {
   margin-right: 10px;
 }
 
+
 .photo-name {
- background: #dddddd;
+ background: #ddddff;
 }
 
  .contacts, .skills, .code-example {
