@@ -1,0 +1,44 @@
+
+body {
+  font-style: serif;
+}
+
+.maindiv {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #eeeeff;
+  padding: 10px;
+}
+
+h3 {
+  font-weight: normal;
+  color: #aa0000;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
+.photo-name {
+ background: #dddddd;
+}
+
+ .contacts, .skills, .code-example {
+  display: inline-block;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5em;
+  height: 180px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.contacts {
+  float: right;
+  margin: 0 20px;
+}
