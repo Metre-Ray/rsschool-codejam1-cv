@@ -3,17 +3,10 @@ body {
   font-family: "Georgia", serif;
 }
 
-.maindiv {
-  width: 800px;
-  margin: 0 auto;
-  padding: 10px;
-  background-color: #eeeeff;
-  border: 1px solid black;
-}
-
 img {
-  float: left;
-  margin-right: 10px;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 h3,
@@ -27,26 +20,83 @@ h3,
  background: #ddddff;
 }
 
- .contacts,
- .skills,
- .code-example {
-  display: inline-block;
-}
-
 .name {
-  display: inline-block;
   margin: 10px;
-  height: 180px;
   font-weight: bold;
   font-size: 1.5em;
   font-family: "Charmonman", cursive;
 }
 
+.maindiv {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #eeeeff;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "summary summary"
+    "skills examples"
+    "section2 section2"
+    "section3 section3"
+    "section4 section4"
+}
+
+figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.photo-name {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .contacts {
-  float: right;
-  margin: 0 20px;
+  justify-self: center;
+}
+
+.skills {
+  grid-area: skills;
 }
 
 .code-example {
-  float: right;
+  grid-area: examples;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.experience {
+  grid-area: section2;
+}
+
+.education {
+  grid-area: section3;
+}
+
+.english {
+  grid-area: section4;
+}
+
+
+@media (max-width: 500px) {
+  .maindiv {
+    grid-template-areas:
+      "header"
+      "summary"
+      "skills"
+      "examples"
+      "section2"
+      "section3"
+      "section4";
+  }
+  .photo-name {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
